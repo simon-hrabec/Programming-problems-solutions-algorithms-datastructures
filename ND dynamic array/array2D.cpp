@@ -43,11 +43,11 @@ public:
   }
   
   const_iterator begin() const {
-    return data.begin();
+    return std::cbegin(data);
   }
   
   const_iterator end() const {
-    return data.end();
+    return std::cend(data);
   }
 
   size_t getSizeX() const {
