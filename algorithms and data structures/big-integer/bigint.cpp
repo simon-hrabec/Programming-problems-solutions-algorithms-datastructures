@@ -12,7 +12,7 @@ class bigint{
     static constexpr uint32_t maxSize = 1000000000;
     
     void shrink(vector<uint32_t> & vec){
-        for(int i = vec.size()-1; i >= 1; i--){
+        for(int i = vec.size()-1; i > 1; i--){
             if (vec[i]==0)
                 vec.pop_back();
         }
